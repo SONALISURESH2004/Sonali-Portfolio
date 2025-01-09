@@ -1,0 +1,75 @@
+/* Hero Section */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 30px 30px; // Adjusted padding for the fixed nav
+    background: rgb(243, 243, 243);
+    color: $text-black-900;
+    text-align: center;
+
+    &-info {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: left;
+        padding-right: 30px; // Spacing between text and image
+
+        h3 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+
+            .name,
+            .typing {
+                color: $skin-color;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: $text-black-700;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 5px;
+            padding: 10px 20px;
+            background: $skin-color;
+            color: white;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: rgb(99, 42, 42);
+            }
+        }
+    }
+
+    &-img {
+        flex: 0 0 40%;
+        max-width: 90%;
+        text-align: center;
+        position: relative;
+        border-radius: 50%;
+        width: 400px;
+
+        display: flex;
+
+        img {
+
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+    }
+    &-socials{
+        display: flex;
+        margin-left: 4px;
+        margin-top: 1rem;
+        gap: 1rem;
+        width: 40%;
+    }
+}
+
+

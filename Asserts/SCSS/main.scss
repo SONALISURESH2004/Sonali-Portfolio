@@ -1,0 +1,19 @@
+//BASE
+@import "base/reset";
+@import "base/variable";
+
+//LAYOUT
+@import "component/navbar";
+@import "component/footer";
+//PAGES
+@import "pages/home";
+
+@import "pages/about";
+
+@import "pages/contact";
+
+@import "pages/portfolio";
+
+@import "pages/skill";
+
+

@@ -1,0 +1,248 @@
+body {
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* Navigation Bar */
+.top-nav {
+  width: 100%;
+  background: whitesmoke;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.top-nav .logo a {
+  color: #302e4d;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+.top-nav .logo a::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid rgb(150, 44, 44);
+  border-left: 5px solid rgb(150, 44, 44);
+  bottom: 10px;
+  left: 10px;
+  opacity: 90%;
+}
+.top-nav .logo a::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid rgb(150, 44, 44);
+  border-right: 5px solid rgb(150, 44, 44);
+  opacity: 90%;
+}
+.top-nav .nav {
+  display: flex;
+  gap: 20px;
+}
+.top-nav .nav li {
+  list-style: none;
+}
+.top-nav .nav li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #302e4d;
+  padding: 5px 15px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.top-nav .nav li a i {
+  margin-right: 5px;
+}
+.top-nav .nav li a.active {
+  color: rgb(150, 44, 44);
+  border-bottom: 2px solid rgb(150, 44, 44);
+}
+.top-nav .nav li a:hover {
+  color: rgb(150, 44, 44);
+}
+
+/* Hero Section */
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 30px 30px;
+  background: rgb(243, 243, 243);
+  color: #302e4d;
+  text-align: center;
+}
+.home-info {
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: left;
+  padding-right: 30px;
+}
+.home-info h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.home-info h3 .name,
+.home-info h3 .typing {
+  color: rgb(150, 44, 44);
+}
+.home-info p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #504e70;
+}
+.home-info .btn {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 10px 20px;
+  background: rgb(150, 44, 44);
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.home-info .btn:hover {
+  background: rgb(99, 42, 42);
+}
+.home-img {
+  flex: 0 0 40%;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  border-radius: 50%;
+  width: 400px;
+  display: flex;
+}
+.home-img img {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.home-socials {
+  display: flex;
+  margin-left: 4px;
+  margin-top: 1rem;
+  gap: 1rem;
+  width: 40%;
+}
+
+/* About */
+.about {
+  position: relative;
+  background-color: rgb(150, 44, 44);
+  height: 100vh;
+  padding: 60px;
+  font-family: sans-serif;
+}
+.about-title {
+  color: rgb(224, 224, 224);
+  font-size: 35px;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+.about-container-img {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.about-container-img img {
+  border-radius: 10px;
+  width: 400px;
+}
+.about-container-desc {
+  font-weight: bold;
+  color: rgb(228, 227, 227);
+  letter-spacing: 2px;
+  max-width: 600px;
+  font-size: 18px;
+}
+.about-container-desc h3 {
+  margin-top: 30px;
+  font-size: 18px;
+}
+.about-container-desc p {
+  font-size: 16px;
+}
+
+.projects {
+  position: relative;
+}
+.projects .color-container {
+  border-color: rgb(150, 44, 44);
+  background: rgb(250, 250, 250);
+}
+.projects .project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+.projects .project-title {
+  margin: 1rem;
+  color: black;
+}
+.projects .project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+#skills {
+  position: relative;
+}
+#skills .skills-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+#skills .experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#skills .article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+#skills .article-container article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+#skills .article-container article.icon {
+  cursor: default;
+}/*# sourceMappingURL=main.css.map */

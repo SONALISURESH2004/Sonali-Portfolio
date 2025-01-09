@@ -1,0 +1,112 @@
+@media (max-width: 768px) {
+    .home {
+        display: block;
+        flex-direction: row;
+        text-align: center;
+        padding: 80px 20px 20px;
+    }
+
+    .home .home-info,
+    .home .home-img {
+
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0;
+        /* Remove padding for smaller screens */
+    }
+
+    .home .home-info {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .home .home-img img {
+        height: 250px;
+        /* Smaller image for smaller screens */
+    }
+    @keyframes example {
+        0%   {background-color:rgb(94, 150, 133); left:0px; top:0px;}
+        25%  {background-color:rgb(171, 171, 93); left:200px; top:0px;}
+        50%  {background-color:rgb(115, 115, 175); left:200px; top:200px;}
+        75%  {background-color:rgb(98, 148, 98); left:0px; top:200px;}
+        100% {background-color:rgb(204, 131, 131); left:0px; top:0px;}
+    }
+    #skills,
+    .skills-details-container{
+        margin-top:2rem;
+    }
+    #profile, .section-container{
+    display:block;
+    }
+    .arrow{
+        display:none;
+
+    }
+    .section,
+    .section-container{
+        height: fit-content;
+    }
+    section{
+        margin:0 5%;
+    }
+    .section__pic-container{
+        width:275px;
+        height:275px;
+        margin :0 auto 2rem;
+    }
+    .about-containers{
+        margin: top 0;
+    }
+}
+@media (max-width: 384px){
+    #contact,#footer{
+        height:40vh;
+    }
+    profile{
+        height:83vh;
+        margin-bottom:0;
+
+    }
+    article{
+        font-size:1rem;
+    }
+    footer nav{
+        height:fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers,.contact-info-upper-container,.btn-conatiner{
+        flex-wrap: wrap;
+    }
+    .contact-info-container{
+        margin:0;
+
+    }
+    .conatct-info-conatiner p,.nav-links li a{
+        font-size:1rem;
+    }
+    .skills-sub-title{
+        font-size:1.25rem;
+    }
+    .home-img{
+        font-size:1.5rem;
+    }
+    .nav-links{
+        flex-direction:column;
+        gap:0.5rem;
+        text-align:center;
+    }
+    .section__pic-container{
+        width:auto;
+        height:46vw;
+        justify-content: center;
+    }
+    .section__text_p2{
+        font-size:1.32rem;
+    }
+    .title{
+        font-size:2rem;
+    }
+    .text-container{
+        text-align: justify;
+    }
+}
