@@ -180,22 +180,135 @@ a,
   width: 400px;
 }
 .about-container-desc {
+  font-size: 15px;
   font-weight: bold;
-  color: rgb(228, 227, 227);
-  letter-spacing: 2px;
-  max-width: 600px;
-  font-size: 18px;
+  color: yellow;
 }
-.about-container-desc h3 {
+.about-container-desc1 {
+  display: flex;
+  justify-content: center;
+  border-radius: 5rem;
+  border: white 0.1rem solid;
+  border-color: grey;
+  background: white;
+  margin: 1rem auto;
+  padding: 2.5rem;
+  flex-direction: column;
+}
+.about-container-desc1 h3 {
   margin-top: 30px;
   font-size: 18px;
 }
-.about-container-desc p {
+.about-container-desc1 p {
   font-size: 16px;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(150, 44, 44);
+  height: 100vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: white 0.1rem solid;
+  border-color: grey;
+  background: white;
+  margin: 5rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.title {
+  font-size: 270%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.section__text_pl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.nav-links-container {
+  display: flex;
+  color: white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.nav {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  padding: 5px 15px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  color: white;
+  cursor: default;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+.linkedin-icon {
+  height: 2.5rem;
+}
+
+span p {
+  padding-bottom: 15px;
+  gap: 19px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects {
   position: relative;
+}
+.projects .titl {
+  font-size: 270%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.projects .section__text__p3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
 }
 .projects .color-container {
   border-color: rgb(150, 44, 44);
@@ -217,6 +330,19 @@ a,
 
 #skills {
   position: relative;
+}
+#skills-section__text__p2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+#skills-tit {
+  font-size: 270%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #skills .skills-sub-title {
   color: rgb(85, 85, 85);

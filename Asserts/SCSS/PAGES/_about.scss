@@ -27,13 +27,22 @@
       }
     }
     &-desc{
-        font-weight: bold;
-        color: rgb(228, 227, 227);
-        letter-spacing: 2px;
-        max-width: 600px;
-        font-size: 18px;
-
-        & h3{
+      font-size:15px;
+      font-weight:bold;
+      color:yellow;
+    }
+    &-desc1{
+        display:flex;;
+        justify-content:center;
+        border-radius: 5rem;
+        border: white 0.1rem solid;
+        border-color: grey;
+        background:white;
+        margin: 1rem auto;
+        padding: 2.5rem;
+        flex-direction:column;
+        
+    & h3{
             margin-top: 30px;
             font-size: 18px;
             
@@ -41,6 +50,7 @@
         & p {
             font-size: 16px;
         }
+      
       }
   }
 
