@@ -20,10 +20,14 @@
 .about-containers,
 .about-details-container {
   display: flex;
+  max-width: 600px;
+  max-width: 100vh;
+
 }
 
 .about-pic {
   border-radius: 2rem;
+  height: 380px;
 }
 
 .arrow {
@@ -42,7 +46,9 @@
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
+.about-container {
+  flex-wrap: wrap;
+  gap: 5rem;
   height: 60%;
+  margin-top: 5rem;
 }
