@@ -48,7 +48,11 @@
         gap: 20px;
 
         li {
+            display: flex;
             list-style: none;
+            overflow-y: hidden;
+            justify-content: center;
+            align-items: center;
 
             a {
                 font-size: 16px;
@@ -59,7 +63,8 @@
                 transition: all 0.3s ease;
 
                 i {
-                    margin-right: 5px;
+                    margin-right: 7px;
+
                 }
 
                 &.active {
