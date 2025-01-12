@@ -1,58 +1,52 @@
-/* About */
-.about {
-    position: relative;
-    background-color: $skin-color;
-    height: 100vh;
-    padding: 60px;
-    font-family: sans-serif;
+/* ABOUT SECTION */
 
-    &-title{
-        color: rgb(224, 224, 224);
-        font-size: 35px;
-    }
-
-  &-container{
-      display: flex;
-      align-items: center;
-      gap: 10%;
-
-    &-img{
-        gap: 2rem;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-      & img{
-        border-radius: 10px;
-        width: 400px;
-
-      }
-    }
-    &-desc{
-      font-size:15px;
-      font-weight:bold;
-      color:yellow;
-    }
-    &-desc1{
-        display:flex;;
-        justify-content:center;
-        border-radius: 5rem;
-        border: white 0.1rem solid;
-        border-color: grey;
-        background:white;
-        margin: 1rem auto;
-        padding: 2.5rem;
-        flex-direction:column;
-        
-    & h3{
-            margin-top: 30px;
-            font-size: 18px;
-            
-        }
-        & p {
-            font-size: 16px;
-        }
-      
-      }
-  }
-
+#about {
+  position: relative;
 }
 
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
