@@ -1,19 +1,22 @@
 //BASE
 @import "base/reset";
 @import "base/variable";
+@import "base/section";
 
 //LAYOUT
 @import "component/navbar";
 @import "component/footer";
+@import "component/icon";
+@import "component/btn";
 //PAGES
 @import "pages/home";
 
 @import "pages/about";
 
-@import "pages/contact";
-
-@import "pages/portfolio";
+@import "pages/projects";
 
 @import "pages/skill";
 
+@import "pages/mediaqueries";
 
+@import "pages/contact";
