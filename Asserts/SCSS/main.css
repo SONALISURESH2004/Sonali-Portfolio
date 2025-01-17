@@ -238,7 +238,7 @@ footer {
 
 footer p {
   text-align: center;
-  color: rgb(224, 109, 128);
+  color: rgb(118, 42, 55);
   font-weight: 600;
   font-size: 18px;
   opacity: 80%;
@@ -311,14 +311,14 @@ footer p {
   flex: 0 0 50%;
   max-width: 50%;
   text-align: left;
-  padding-right: 30px;
+  padding-right: 50px;
+  font-weight: bold;
 }
 .home-info h3 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
-.home-info h3 .name,
-.home-info h3 .typing {
+.home-info h3 .name {
   color: rgb(150, 44, 44);
 }
 .home-info p {
@@ -386,16 +386,47 @@ footer p {
   opacity: 90%;
 }
 
-.typing:before {
+.container {
+  overflow: hidden;
+  width: 246px;
+}
+
+.container .text {
+  position: relative;
+  color: rgb(150, 44, 44);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container .text.first-text {
+  color: black;
+}
+
+.container .text.sec-text {
+  font-size: 35px;
+  font-weight: bold;
+  color: deeppink;
+  overflow: hidden;
+}
+
+.text.sec-text:after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  border-left: 2px solid;
+  border-left: 2px solid deeppink;
+  background-color: rgb(247, 247, 247);
+  animation: animate 4s steps(40) infinite;
 }
 
+@keyframes animate {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
 /* ABOUT SECTION */
 #about {
   position: relative;
@@ -464,6 +495,8 @@ footer p {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .project-img {
@@ -504,6 +537,8 @@ footer p {
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .article-container {
