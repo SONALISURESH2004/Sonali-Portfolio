@@ -5,6 +5,7 @@
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    background-color: $skin-color;
 }
 
 .contact-info-upper-container {
@@ -16,6 +17,7 @@
     background: (250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
+    color:white;
 }
 
 .contact-info-container {

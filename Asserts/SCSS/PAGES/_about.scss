@@ -4,6 +4,7 @@
 
 #about {
   position: relative;
+  background-color:$skin-color;
 }
 
 .about-containers {
@@ -44,6 +45,7 @@
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  width:80%;
 }
 
 .about-container {

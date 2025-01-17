@@ -230,7 +230,7 @@ section {
 
 /* FOOTER SECTION */
 footer {
-  height: 26vh;
+  height: auto;
   margin: 0 1rem;
 }
 
@@ -387,6 +387,7 @@ footer p {
 /* ABOUT SECTION */
 #about {
   position: relative;
+  background-color: rgb(150, 44, 44);
 }
 
 .about-containers {
@@ -426,6 +427,7 @@ footer p {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  width: 80%;
 }
 
 .about-container {
@@ -614,6 +616,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  background-color: rgb(150, 44, 44);
 }
 
 .contact-info-upper-container {
@@ -625,6 +628,7 @@ article .icon {
   background: 250, 250, 250;
   margin: 2rem auto;
   padding: 0.5rem;
+  color: white;
 }
 
 .contact-info-container {
