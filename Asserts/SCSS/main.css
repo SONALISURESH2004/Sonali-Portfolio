@@ -38,6 +38,8 @@ section {
 
 .section-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section__pic-container {
@@ -236,7 +238,7 @@ footer {
 
 footer p {
   text-align: center;
-  color: rgb(150, 44, 44);
+  color: rgb(224, 109, 128);
   font-weight: 600;
   font-size: 18px;
   opacity: 80%;
@@ -275,7 +277,7 @@ footer p {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: rgb(150, 44, 44);
   color: white;
 }
 
@@ -406,6 +408,13 @@ footer p {
   display: flex;
   max-width: 600px;
   max-width: 100vh;
+  width: 80%;
+}
+
+.text-container {
+  color: yellow;
+  font-weight: bold;
+  display: flex;
 }
 
 .about-pic {
@@ -625,10 +634,9 @@ article .icon {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  background: 250, 250, 250;
+  background: white;
   margin: 2rem auto;
   padding: 0.5rem;
-  color: white;
 }
 
 .contact-info-container {

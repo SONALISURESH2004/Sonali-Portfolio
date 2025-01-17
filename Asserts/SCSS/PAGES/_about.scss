@@ -23,9 +23,13 @@
   display: flex;
   max-width: 600px;
   max-width: 100vh;
-
+  width:80%;
 }
-
+.text-container{
+  color:yellow;
+  font-weight:bold;
+  display:flex;
+}
 .about-pic {
   border-radius: 2rem;
   height: 380px;
