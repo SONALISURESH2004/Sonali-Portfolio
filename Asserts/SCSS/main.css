@@ -386,6 +386,16 @@ footer p {
   opacity: 90%;
 }
 
+.typing:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid;
+}
+
 /* ABOUT SECTION */
 #about {
   position: relative;
@@ -493,6 +503,7 @@ footer p {
 .experience-details-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .article-container {
