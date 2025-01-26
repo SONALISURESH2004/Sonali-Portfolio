@@ -56,6 +56,101 @@
         margin-top: 0;
     }
 }
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1rem; /* Adjust base font size for readability */
+        margin: 0;
+        padding: 0;
+    }
+
+    #profile {
+        height: auto; /* Adjust to content height */
+        margin-bottom: 1rem;
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+        margin: 0 1rem; /* Add padding for proper spacing */
+    }
+
+    #contact, 
+    #projects {
+        height: fit-content; /* Allow content to dictate height */
+        margin: 1rem;
+    }
+
+    #desktop-nav {
+        display: none; /* Hide desktop navigation */
+    }
+
+    #hamburger-nav {
+        display: flex; /* Show mobile navigation */
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    section {
+        margin: 0 5%;
+        padding: 1rem 0; /* Add spacing between sections */
+        height: fit-content;
+    }
+
+    .section__pic-container {
+        width: 100%; /* Make images responsive */
+        height: auto;
+        margin: 0 auto 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links */
+        gap: 1rem;
+        text-align: center;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin: 2rem 0;
+    }
+
+    .title {
+        font-size: 1.5rem; /* Resize titles for smaller screens */
+        text-align: center;
+    }
+
+    .text-container {
+        text-align: justify;
+        margin: 0 1rem; /* Add spacing on smaller devices */
+    }
+
+    .btn-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    article, 
+    .experience-sub-title, 
+    .section__text__p2 {
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+    #profile h1, #profile p {
+        font-size: 1.25rem; /* Scale down text */
+        margin: 0.5rem 0; /* Add space between elements */
+    }
+
+    #profile img {
+        max-width: 80%; /* Scale down images in the first section */
+        height: auto;
+        margin: 1rem auto; /* Center-align the image */
+    }
+}
 
 @media screen and (max-width: 600px) {
 
