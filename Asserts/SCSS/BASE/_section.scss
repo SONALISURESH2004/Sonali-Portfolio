@@ -18,10 +18,11 @@ section {
 
 .section__pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-
+    height: 500px;
+    width: 500px;
+    top:0;
+    left:0;
+    margin-left: 0px;
 }
 
 .section__text {
@@ -33,7 +34,7 @@ section {
     font-weight: 600;
 }
 
-.section__text__p1 {
+.section__text__p1{
     text-align: center;
 }
 

@@ -44,9 +44,11 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  height: 500px;
+  width: 500px;
+  top: 0;
+  left: 0;
+  margin-left: 0px;
 }
 
 .section__text {
@@ -477,7 +479,8 @@ footer p {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  width: 80%;
+  max-width: 130%; /* Increase the max-width for a wider container */
+  width: auto; /* Ensures it uses the available width if needed */
 }
 
 .about-container {
