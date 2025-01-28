@@ -151,6 +151,102 @@
         margin: 1rem auto; /* Center-align the image */
     }
 }
+@media screen and (max-width: 792px) {
+    body {
+        font-size: 1rem; /* Adjust base font size for readability */
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    #profile {
+        height: auto; /* Adjust to fit content */
+        margin-bottom: 1.5rem;
+        padding: 1.5rem 1rem; /* Add spacing for better structure */
+        text-align: center; /* Center-align profile content */
+    }
+
+    #profile h1, 
+    #profile p {
+        font-size: 1.25rem; /* Adjust font size */
+        margin: 0.5rem 0; /* Add space between elements */
+    }
+
+    #profile img {
+        max-width: 70%; /* Scale down images for this resolution */
+        height: auto;
+        margin: 1rem auto; /* Center-align the image */
+    }
+
+    .about-containers {
+        flex-wrap: wrap; /* Ensure proper wrapping */
+        margin: 0 1rem; /* Add padding */
+    }
+
+    #contact,
+    #projects {
+        height: fit-content; /* Allow content to dictate height */
+        margin: 1rem; /* Add space between sections */
+    }
+
+    section {
+        margin: 0 4%;
+        padding: 1rem 0; /* Add spacing for better separation */
+        height: fit-content;
+    }
+
+    .section__pic-container {
+        width: 100%; /* Ensure images are responsive */
+        height: auto;
+        margin: 0 auto 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack navigation links */
+        gap: 1rem;
+        text-align: center;
+    }
+
+    #hamburger-nav {
+        display: flex; /* Show mobile navigation */
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin: 2rem 0;
+    }
+
+    .title {
+        font-size: 1.5rem; /* Adjust titles for readability */
+        text-align: center;
+    }
+
+    .text-container {
+        text-align: justify;
+        margin: 0 1rem; /* Add spacing */
+    }
+
+    .btn-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap */
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    article, 
+    .experience-sub-title, 
+    .section__text__p2 {
+        font-size: 1rem; /* Adjust font size for text */
+    }
+}
 
 @media screen and (max-width: 600px) {
 
