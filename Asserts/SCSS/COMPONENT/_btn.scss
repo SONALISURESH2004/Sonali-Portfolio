@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-
+    color:rgb(242, 223, 223);
 }
 
 .btn {
@@ -27,7 +27,7 @@
 
 .btn-color-1,
 .btn-color-2:hover {
-    background: $skin-color;
+    background: 
     color: white;
 }
 
@@ -40,9 +40,10 @@
 }
 
 .btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
+    border: rgb(241, 234, 234) 0.1rem solid;
 }
 
 .btn-container {
     gap: 1rem;
+    color:white;
 }
