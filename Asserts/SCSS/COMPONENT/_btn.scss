@@ -27,7 +27,6 @@
 
 .btn-color-1,
 .btn-color-2:hover {
-    background: 
     color: white;
 }
 
@@ -36,11 +35,12 @@
 }
 
 .btn-color-2 {
-    background: none;
+    background:$background;
 }
 
 .btn-color-2:hover {
-    border: rgb(241, 234, 234) 0.1rem solid;
+    background:$color;
+    border:$color 0.1rem solid;
 }
 
 .btn-container {

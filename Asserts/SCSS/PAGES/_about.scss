@@ -5,7 +5,8 @@
 #about {
   position: relative;
   background-color:rgb(242, 223, 223);
-  min-height:90vh;
+  min-height:60vh;
+  padding:40px 30px 40px;
 }
 
 .about-containers {
@@ -22,35 +23,57 @@
 .about-containers,
 .about-details-container {
   display: flex;
-  max-width: 70vh;
   width:50%;
+  height:400px;
 }
 .text-container{
   color:black;
   font-weight:bold;
   display:flex;
+  box-sizing: content-box;
+  display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background:rgb(128, 103, 175);
+    margin: 2rem auto;
+    padding: 0.5rem;
+    
 }
-@keyframes bounce {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
+/* Centering the icons */
+.about-socials {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  gap: 5rem; /* Space between icons */
+  margin-top: 0rem;
 }
 
-.text-container {
-  animation: bounce 2s infinite ease-in-out;
+/* Styling the images (icons) */
+.about-socials img {
+  width: 100px; /* Adjust size */
+  height: 100px; /* Ensure equal width & height */
+  border-radius: 50%; /* Makes the image circular */
+  border: 3px solid black; /* Green border */
+  padding: 8px; /* Adds spacing inside the border */
+  object-fit: cover; /* Ensures proper image fitting */
+  transition: 0.3s ease-in-out; /* Smooth hover effect */
 }
+
+/* Hover effect (optional) */
+.about-socials img:hover {
+  border-color:#b578b3;
+  background: rgb(212, 123, 190);;/* Changes border color on hover */
+}
+
+
+
 
 .about-pic {
   border-radius: 2rem;
   height: 380px;
 }
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
 
   .details-container {
     padding: 1.5rem;
@@ -72,7 +95,7 @@
   height: 60%;
   margin-top: 5rem;
 }
-.about-pic {
+.text-container {
   animation: float 3s ease-in-out infinite;
 }
 
