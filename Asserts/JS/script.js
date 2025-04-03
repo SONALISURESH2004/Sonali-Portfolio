@@ -5,7 +5,15 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 const img = document.querySelector(".home-img img");
-
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  
 img.addEventListener("touchstart", () => {
     img.style.animation = "none"; // Reset animation
     setTimeout(() => {

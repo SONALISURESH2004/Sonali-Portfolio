@@ -5,7 +5,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right top, #5494c6, #8f8ccb, #c281b8, #e17c93, #e3866a);
+  background: linear-gradient(to right top, #108ff0, #8f8ccb, #c281b8, #e17c93, #e3866a);
 }
 
 * {
@@ -126,6 +126,22 @@ section {
   color: white;
   background: rgb(128, 103, 175);
   border: rgb(128, 103, 175) 0.1rem solid;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 /* HAMBURGER MENU */
@@ -381,17 +397,6 @@ footer p {
   animation: words 8s infinite, typing 4s steps(20) infinite alternate;
 }
 
-.wrapper span::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 100%;
-  border-left: 1px solid white;
-  background: rgb(247, 247, 247);
-  right: -17px;
-  animation: cursor 0.5s infinite;
-}
-
 @keyframes cursor {
   50% {
     border-left: 2px solid transparent;
@@ -419,6 +424,33 @@ footer p {
     width: 100%;
   }
 }
+.wrapper {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+  color: white;
+  display: inline-block;
+}
+
+.wrapper span::before {
+  content: "Front-end Developer";
+  animation: words 8s infinite;
+}
+
+@keyframes words {
+  0%, 20% {
+    content: "Front-end Developer";
+  }
+  21%, 40% {
+    content: "Public Speaker";
+  }
+  41%, 60% {
+    content: "Bibliophile";
+  }
+  61%, 80% {
+    content: "Techie";
+  }
+}
 /* ABOUT SECTION */
 #about {
   position: relative;
@@ -441,32 +473,48 @@ footer p {
 .about-containers,
 .about-details-container {
   display: flex;
-  width: 50%;
-  height: 400px;
-}
-
-.text-container {
-  color: black;
-  font-weight: bold;
-  display: flex;
-  box-sizing: content-box;
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: rgb(128, 103, 175);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  height: 500px;
 }
 
 /* Centering the icons */
 .about-socials {
+  position: absolute; /* Fix it to the left */
+  left: 20px; /* Distance from the left */
+  top: 75%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust centering */
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  gap: 5rem; /* Space between icons */
-  margin-top: 0rem;
+  flex-direction: row; /* Stack icons and text vertically */
+  align-items: center;
+  gap: 2rem; /* Space between social profiles */
+  background: #e17c93;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.icon {
+  width: 50px; /* Adjust icon size */
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Hover effect */
+}
+
+p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
 }
 
 /* Styling the images (icons) */
@@ -483,8 +531,8 @@ footer p {
 
 /* Hover effect (optional) */
 .about-socials img:hover {
-  border-color: #b578b3;
-  background: rgb(212, 123, 190); /* Changes border color on hover */
+  border-color: #e17c93;
+  background: #8f8ccb; /* Changes border color on hover */
 }
 
 .about-pic {
@@ -515,6 +563,22 @@ footer p {
   animation: float 3s ease-in-out infinite;
 }
 
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Moves up */
+  }
+  100% {
+    transform: translateY(0); /* Moves back to original position */
+  }
+}
+/* Apply this animation to any element */
+.about-socials {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -526,6 +590,36 @@ footer p {
     transform: translateY(0px);
   }
 }
+facts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  padding: 10px;
+}
+
+/* Individual Fact Cards */
+.fact-card {
+  background-color: #9c27b0; /* Purple */
+  color: white;
+  padding: 15px 18px; /* Increased padding for more height */
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+  max-width: 500px;
+  min-height: 100px; /* Increased height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+/* Hover Effect */
+.fact-card:hover {
+  transform: scale(1.1);
+}
+
 /* PROJECTS SECTION */
 #projects {
   position: relative;
@@ -664,6 +758,14 @@ article .icon {
     flex-wrap: wrap;
     margin: 0 1rem; /* Add padding for proper spacing */
   }
+  .section__pic-container {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    top: 0;
+    right: 0;
+    margin-right: 0px;
+  }
   #contact,
   #projects {
     height: -moz-fit-content;
@@ -731,6 +833,41 @@ article .icon {
     max-width: 80%; /* Scale down images in the first section */
     height: auto;
     margin: 1rem auto; /* Center-align the image */
+  }
+  .top-nav {
+    height: 80px; /* Adjust to the desired height */
+    font-size: 18px; /* Increase text size if needed */
+    padding: 15px 20px; /* Adjust padding */
+  }
+  .wrapper {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    color: white;
+    display: inline-block;
+  }
+  .wrapper span::before {
+    content: "Front-end Developer";
+    animation: words 8s infinite;
+  }
+  @keyframes words {
+    0%, 20% {
+      content: "Front-end Developer";
+    }
+    21%, 40% {
+      content: "Public Speaker";
+    }
+    41%, 60% {
+      content: "Bibliophile";
+    }
+    61%, 80% {
+      content: "Techie";
+    }
+  }
+  @keyframes cursor {
+    50% {
+      border-left: 2px solid transparent;
+    }
   }
 }
 @media screen and (max-width: 792px) {
@@ -870,6 +1007,119 @@ article .icon {
   }
   .text-container {
     text-align: justify;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 0.9rem; /* Slightly smaller text for readability */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  #profile {
+    height: auto; /* Adjust to fit content */
+    margin-bottom: 1rem;
+    padding: 1rem 0; /* Add spacing for better structure */
+    text-align: center; /* Center-align profile content */
+  }
+  #profile h1,
+  #profile p {
+    font-size: 1rem; /* Scale down text */
+    margin: 0.5rem 0; /* Add space between elements */
+  }
+  #profile img {
+    max-width: 90%; /* Scale down images */
+    height: auto;
+    margin: 1rem auto; /* Center-align the image */
+  }
+  .about-containers {
+    flex-wrap: wrap;
+    margin: 0 0.5rem; /* Reduce side margins */
+  }
+  #contact,
+  #projects {
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0.5rem; /* Reduce spacing */
+  }
+  section {
+    margin: 0 3%;
+    padding: 1rem 0; /* Reduce padding */
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .section__pic-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 0.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+  }
+  footer nav {
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 1rem 0;
+  }
+  .title {
+    font-size: 1.25rem; /* Reduce title size */
+    text-align: center;
+  }
+  .text-container {
+    text-align: justify;
+    margin: 0 0.5rem; /* Reduce margins */
+  }
+  .btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .logo {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  article,
+  .experience-sub-title,
+  .section__text__p2 {
+    font-size: 0.9rem; /* Adjust font size for readability */
+  }
+  .section__pic-container {
+    width: auto;
+    height: 50vw;
+    justify-content: center;
+  }
+  .top-nav {
+    height: 60px; /* Smaller navbar */
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  .wrapper {
+    font-size: 28px; /* Slightly smaller text */
+    font-weight: 600;
+    min-width: 250px;
+  }
+  .section__text__p2 {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.1rem;
+  }
+  .logo {
+    font-size: 1.25rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
   }
 }
 /* CONTACT */

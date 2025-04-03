@@ -23,31 +23,47 @@
 .about-containers,
 .about-details-container {
   display: flex;
-  width:50%;
-  height:400px;
+
+  height:500px;
 }
-.text-container{
-  color:black;
-  font-weight:bold;
-  display:flex;
-  box-sizing: content-box;
-  display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background:rgb(128, 103, 175);
-    margin: 2rem auto;
-    padding: 0.5rem;
-    
-}
+
 /* Centering the icons */
 .about-socials {
+  position: absolute; /* Fix it to the left */
+  left: 20px; /* Distance from the left */
+  top: 75%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust centering */
+  
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  gap: 5rem; /* Space between icons */
-  margin-top: 0rem;
+  flex-direction: row; /* Stack icons and text vertically */
+  align-items: center;
+  gap: 2rem; /* Space between social profiles */
+  
+  background:  #e17c93;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.social-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+}
+.icon {
+  width: 50px; /* Adjust icon size */
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+.icon:hover {
+  transform: scale(1.1); /* Hover effect */
+}
+p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
 }
 
 /* Styling the images (icons) */
@@ -63,8 +79,8 @@
 
 /* Hover effect (optional) */
 .about-socials img:hover {
-  border-color:#b578b3;
-  background: rgb(212, 123, 190);;/* Changes border color on hover */
+  border-color:#e17c93;
+  background: #8f8ccb;/* Changes border color on hover */
 }
 
 
@@ -98,9 +114,54 @@
 .text-container {
   animation: float 3s ease-in-out infinite;
 }
+@keyframes floatUpDown {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px); /* Moves up */
+  }
+  100% {
+      transform: translateY(0); /* Moves back to original position */
+  }
+}
+
+/* Apply this animation to any element */
+.about-socials {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
 
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-15px); }
   100% { transform: translateY(0px); }
+}
+facts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  padding:10px;
+}
+
+/* Individual Fact Cards */
+.fact-card {
+  background-color: #9c27b0; /* Purple */
+  color: white;
+  padding: 15px 18px; /* Increased padding for more height */
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  transition: transform 0.3s ease-in-out;
+  max-width: 500px;
+  min-height: 100px; /* Increased height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:5px;
+}
+
+/* Hover Effect */
+.fact-card:hover {
+  transform: scale(1.1);
 }

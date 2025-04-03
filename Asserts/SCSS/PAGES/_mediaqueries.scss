@@ -72,7 +72,14 @@
         flex-wrap: wrap;
         margin: 0 1rem; /* Add padding for proper spacing */
     }
-
+    .section__pic-container{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        top: 0;
+        right: 0;
+        margin-right: 0px;
+    }
     #contact, 
     #projects {
         height: fit-content; /* Allow content to dictate height */
@@ -149,6 +156,46 @@
         max-width: 80%; /* Scale down images in the first section */
         height: auto;
         margin: 1rem auto; /* Center-align the image */
+    }
+    .top-nav{
+    
+            height: 80px; /* Adjust to the desired height */
+            font-size: 18px; /* Increase text size if needed */
+            padding: 15px 20px; /* Adjust padding */
+        
+    }
+    .wrapper {
+        font-size: 34px;
+        font-weight: 600;
+        min-width: 280px;
+        color: white;
+        display: inline-block;
+    }
+    
+    .wrapper span::before {
+        content: "Front-end Developer";
+        animation: words 8s infinite;
+    }
+    
+    @keyframes words {
+        0%, 20% {
+            content: "Front-end Developer";
+        }
+        21%, 40% {
+            content: "Public Speaker";
+        }
+        41%, 60% {
+            content: "Bibliophile";
+        }
+        61%, 80% {
+            content: "Techie";
+        }
+    }
+    
+    @keyframes cursor {
+        50% {
+            border-left: 2px solid transparent;
+        }
     }
 }
 @media screen and (max-width: 792px) {
@@ -315,4 +362,139 @@
     .text-container {
         text-align: justify;
     }
+    
 }
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 0.9rem; /* Slightly smaller text for readability */
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    #profile {
+        height: auto; /* Adjust to fit content */
+        margin-bottom: 1rem;
+        padding: 1rem 0; /* Add spacing for better structure */
+        text-align: center; /* Center-align profile content */
+    }
+
+    #profile h1, 
+    #profile p {
+        font-size: 1rem; /* Scale down text */
+        margin: 0.5rem 0; /* Add space between elements */
+    }
+
+    #profile img {
+        max-width: 90%; /* Scale down images */
+        height: auto;
+        margin: 1rem auto; /* Center-align the image */
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+        margin: 0 0.5rem; /* Reduce side margins */
+    }
+
+    #contact, 
+    #projects {
+        height: fit-content;
+        margin: 0.5rem; /* Reduce spacing */
+    }
+
+    section {
+        margin: 0 3%;
+        padding: 1rem 0; /* Reduce padding */
+        height: fit-content;
+    }
+
+    .section__pic-container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 0.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    #hamburger-nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.8rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin: 1rem 0;
+    }
+
+    .title {
+        font-size: 1.25rem; /* Reduce title size */
+        text-align: center;
+    }
+
+    .text-container {
+        text-align: justify;
+        margin: 0 0.5rem; /* Reduce margins */
+    }
+
+    .btn-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    article, 
+    .experience-sub-title, 
+    .section__text__p2 {
+        font-size: 0.9rem; /* Adjust font size for readability */
+    }
+
+    .section__pic-container {
+        width: auto;
+        height: 50vw;
+        justify-content: center;
+    }
+
+    .top-nav {
+        height: 60px; /* Smaller navbar */
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    .wrapper {
+        font-size: 28px; /* Slightly smaller text */
+        font-weight: 600;
+        min-width: 250px;
+    }
+
+    .section__text__p2 {
+        font-size: 1rem;
+    }
+
+    .experience-sub-title {
+        font-size: 1.1rem;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+
