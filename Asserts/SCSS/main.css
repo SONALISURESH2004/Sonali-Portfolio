@@ -944,6 +944,10 @@ article .icon {
     width: -moz-fit-content;
     width: fit-content;
   }
+  #experience {
+    position: relative;
+    margin: 3rem 4rem;
+  }
   .proj-containers {
     display: flex;
     gap: 40px;
@@ -951,8 +955,8 @@ article .icon {
   }
   .proj-containers1 {
     display: flex;
-    gap: 10px;
-    padding: 40px 0px 40px;
+    gap: 5px;
+    padding: 50px 0px 50px;
   }
   .experience-details-container {
     display: flex;
@@ -1071,10 +1075,18 @@ article .icon {
     font-size: 1rem; /* Adjust font size for text */
   }
 }
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+@media (min-width: 360px) and (max-width: 740px) {
+  body {
+    font-size: 1rem; /* Adjust base font size for readability */
+    margin: 0;
+    padding: 0;
+  }
+  .top-nav {
+    font-size: 40px;
+    padding: 50px 25px;
+  }
+  #contact {
+    height: 60vh;
   }
   #profile {
     height: 83vh;
@@ -1125,6 +1137,13 @@ article .icon {
   .text-container {
     text-align: justify;
   }
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    background-color: rgb(242, 223, 223);
+  }
 }
 @media screen and (max-width: 320px) {
   body {
@@ -1165,7 +1184,6 @@ article .icon {
     flex-wrap: wrap;
     margin: 0 0.5rem; /* Reduce side margins */
   }
-  #contact,
   #projects {
     height: -moz-fit-content;
     height: fit-content;
@@ -1264,13 +1282,28 @@ article .icon {
     gap: 0.5rem;
     text-align: center;
   }
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    background-color: rgb(242, 223, 223);
+  }
+  .experience-details-container1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 6rem;
+  }
 }
 /* CONTACT */
 #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 80vh;
+  height: 60vh;
   background-color: rgb(242, 223, 223);
 }
 

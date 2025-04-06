@@ -261,23 +261,29 @@
         max-width: 100px;      /* ✅ Keeps it from stretching too wide */
         width: fit-content; 
     }
+    #experience {
+        position: relative;
+        margin: 3rem 4rem;
+    }
+      
     .proj-containers {
         display: flex;
         gap: 40px;
-        padding:50px 0px 50px;
+        padding:50px  0px 50px ;
     }
     .proj-containers1{
         display:flex;
-        gap:10px;
-        padding:40px 0px 40px;
+        gap:5px;
+        padding:50px 0px 50px;
     }
     .experience-details-container {
         display: flex;
         justify-content: center;
         margin-bottom:6rem;
         margin-top:6rem;
-    
+       
     }
+
     .experience-details-container1 {
         display: flex;
         justify-content: center;
@@ -407,11 +413,18 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-
-    #contact,
-    footer {
-        height: 40vh;
+@media (min-width: 360px) and (max-width: 740px) {
+    body {
+        font-size: 1rem; /* Adjust base font size for readability */
+        margin: 0;
+        padding: 0;
+    }  
+    .top-nav {
+        font-size: 40px;
+        padding: 50px 25px;
+    }
+    #contact{
+        height: 60vh;
     }
 
     #profile {
@@ -474,6 +487,13 @@
     .text-container {
         text-align: justify;
     }
+    #contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 60vh;
+        background-color: rgb(242, 223, 223);
+    }
     
 }
 
@@ -520,8 +540,7 @@
         margin: 0 0.5rem; /* Reduce side margins */
     }
     
-    
-    #contact, 
+ 
     #projects {
         height: fit-content;
         margin: 0.5rem; /* Reduce spacing */
@@ -637,6 +656,21 @@
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
+    }
+    #contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 60vh;
+        background-color:rgb(242, 223, 223);
+    }
+    .experience-details-container1 {
+        display: flex;
+        justify-content: center;
+        margin-bottom:6rem;
+        margin-left:0.5rem;
+        margin-right:0.5rem;
+        margin-top:6rem;
     }
 }
 
