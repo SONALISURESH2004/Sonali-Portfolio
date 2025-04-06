@@ -1,19 +1,16 @@
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
-const img = document.querySelector(".home-img img");
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger-icon");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (hamburger && navLinks) {
+        hamburger.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+        });
     }
-  }
-  
+    });
+
+
 img.addEventListener("touchstart", () => {
     img.style.animation = "none"; // Reset animation
     setTimeout(() => {
