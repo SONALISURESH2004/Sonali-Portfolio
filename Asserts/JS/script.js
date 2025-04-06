@@ -1,14 +1,14 @@
 
     document.addEventListener("DOMContentLoaded", function () {
     const hamburger = document.getElementById("hamburger-icon");
-    const navLinks = document.querySelector(".nav-links");
+    const nav = document.getElementById("mobile-nav");
 
-    if (hamburger && navLinks) {
-        hamburger.addEventListener("click", function () {
-        navLinks.classList.toggle("show");
-        });
-    }
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle("show");
     });
+    });
+
+
 
 
 img.addEventListener("touchstart", () => {
