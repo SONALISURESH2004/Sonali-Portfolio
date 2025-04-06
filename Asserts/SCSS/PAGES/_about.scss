@@ -30,7 +30,7 @@
 /* Centering the icons */
 .about-socials {
   position: absolute; /* Fix it to the left */
-  left: 20px; /* Distance from the left */
+  left: 20px; 
   top: 75%; /* Center vertically */
   transform: translateY(-50%); /* Adjust centering */
   
@@ -136,7 +136,7 @@ p {
   50% { transform: translateY(-15px); }
   100% { transform: translateY(0px); }
 }
-facts-container {
+.facts-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

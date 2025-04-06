@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 body {
   line-height: 1.5;
@@ -479,7 +480,7 @@ footer p {
 /* Centering the icons */
 .about-socials {
   position: absolute; /* Fix it to the left */
-  left: 20px; /* Distance from the left */
+  left: 20px;
   top: 75%; /* Center vertically */
   transform: translateY(-50%); /* Adjust centering */
   display: flex;
@@ -590,7 +591,7 @@ p {
     transform: translateY(0px);
   }
 }
-facts-container {
+.facts-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -648,10 +649,21 @@ facts-container {
   border-color: rgb(163, 163, 163);
 }
 
-.proj-containers {
+.proj-containers1 {
   display: flex;
-  gap: 30px;
-  padding: 40px 30px 40px;
+  flex-wrap: wrap; /* ✅ allows items to wrap to new lines */
+  gap: 2rem;
+  padding: 50px 2rem; /* ✅ add left/right padding to avoid edge overflow */
+  justify-content: center; /* ✅ optional, keeps items centered nicely */
+  box-sizing: border-box;
+}
+
+.experience-details-container1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 /* EXPERIENCE SECTION */
@@ -693,6 +705,12 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+.proj-containers {
+  display: flex;
+  gap: 30px;
+  padding: 40px 30px 40px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -758,11 +776,15 @@ article .icon {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
     font-size: 1rem; /* Adjust base font size for readability */
     margin: 0;
     padding: 0;
+  }
+  .top-nav {
+    font-size: 40px;
+    padding: 50px 25px;
   }
   #profile {
     height: auto; /* Adjust to content height */
@@ -780,7 +802,6 @@ article .icon {
     right: 0;
     margin-right: 0px;
   }
-  #contact,
   #projects {
     height: -moz-fit-content;
     height: fit-content; /* Allow content to dictate height */
@@ -804,16 +825,43 @@ article .icon {
     width: 100%; /* Make images responsive */
     height: auto;
     margin: 0 auto 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .facts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    padding: 10px;
+  }
+  /* Individual Fact Cards */
+  .fact-card {
+    background-color: #9c27b0; /* Purple */
+    color: white;
+    padding: 17px; /* Increased padding for more height */
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+    max-width: 500px;
+    min-height: 100px; /* Increased height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
   }
   .nav-links {
     flex-direction: column; /* Stack navigation links */
     gap: 1rem;
     text-align: center;
   }
-  footer nav {
-    height: -moz-fit-content;
-    height: fit-content;
-    margin: 2rem 0;
+  footer p {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+    opacity: 80%;
   }
   .title {
     font-size: 1.5rem; /* Resize titles for smaller screens */
@@ -848,11 +896,6 @@ article .icon {
     height: auto;
     margin: 1rem auto; /* Center-align the image */
   }
-  .top-nav {
-    height: 80px; /* Adjust to the desired height */
-    font-size: 18px; /* Increase text size if needed */
-    padding: 15px 20px; /* Adjust padding */
-  }
   .wrapper {
     font-size: 34px;
     font-weight: 600;
@@ -882,6 +925,66 @@ article .icon {
     50% {
       border-left: 2px solid transparent;
     }
+  }
+  .about-socials {
+    position: absolute; /* Fix it to the left */
+    right: 50px;
+    top: 15%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust centering */
+    z-index: 9999;
+    display: flex;
+    flex-direction: column; /* Stack icons and text vertically */
+    align-items: center;
+    gap: 2rem; /* Space between social profiles */
+    background: #e17c93;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100px; /* ✅ Keeps it from stretching too wide */
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .proj-containers {
+    display: flex;
+    gap: 40px;
+    padding: 50px 0px 50px;
+  }
+  .proj-containers1 {
+    display: flex;
+    gap: 10px;
+    padding: 40px 0px 40px;
+  }
+  .experience-details-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+  }
+  .experience-details-container1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 6rem;
+  }
+  .details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: rgb(242, 223, 223);
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    max-width: 200%;
+    width: auto;
+  }
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    background-color: rgb(242, 223, 223);
   }
 }
 @media screen and (max-width: 792px) {
@@ -1025,10 +1128,22 @@ article .icon {
 }
 @media screen and (max-width: 320px) {
   body {
-    font-size: 0.9rem; /* Slightly smaller text for readability */
+    font-size: 0.9rem;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  .top-nav {
+    width: 100%;
+    padding: 90px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: white;
   }
   #profile {
     height: auto; /* Adjust to fit content */

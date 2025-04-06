@@ -39,3 +39,8 @@ article {
 article .icon {
   cursor: default;
 }
+.proj-containers {
+  display: flex;
+  gap: 30px;
+  padding:40px 30px 40px;
+}

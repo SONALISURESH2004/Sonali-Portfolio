@@ -26,9 +26,23 @@
   color: black;
   border-color: rgb(163, 163, 163);
 }
+  
+.proj-containers1 {
+    display: flex;
+    flex-wrap: wrap;       /* ✅ allows items to wrap to new lines */
+    gap: 2rem;
+    padding: 50px 2rem;     /* ✅ add left/right padding to avoid edge overflow */
+    justify-content: center; /* ✅ optional, keeps items centered nicely */
+    box-sizing: border-box;
+  }
+  
 
-.proj-containers {
+.experience-details-container1 {
   display: flex;
-  gap: 30px;
-  padding:40px 30px 40px;
+  justify-content: center;
+  margin-bottom:6rem;
+  margin-left:2rem;
+  margin-right:2rem;
+  
 }
+
