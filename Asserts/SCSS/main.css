@@ -1621,6 +1621,11 @@ article .icon {
     overflow-x: hidden;
     width: 100%;
   }
+  .about-pic {
+    border-radius: 2rem;
+    height: 190px;
+    width: 190px;
+  }
   #profile {
     height: auto; /* Adjust to fit content */
     margin-bottom: 1rem;
