@@ -1450,7 +1450,11 @@
             overflow-x: hidden;
             width: 100%;
         }
-    
+        .about-pic{
+            border-radius: 2rem;
+            height: 280px;
+            width:280px;
+        }
         #profile {
             height: auto;
             margin-bottom: 1rem;
@@ -1636,11 +1640,12 @@
               z-index: 10;
               margin-left:0.5rem;
               margin-right:0.5rem;
+              padding:4px 8px
             }
           
             .about-socials .social-link img {
-              width: 20px;
-              height: 20px;
+              width: 18px;
+              height: 18px;
             }
           
             .about-socials .social-link {
