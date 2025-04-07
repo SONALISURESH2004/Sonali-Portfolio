@@ -1,12 +1,5 @@
 
-    document.addEventListener("DOMContentLoaded", function () {
-    const hamburger = document.getElementById("hamburger-icon");
-    const nav = document.getElementById("mobile-nav");
-
-    hamburger.addEventListener("click", () => {
-        nav.classList.toggle("show");
-    });
-    });
+d
 
 
 
@@ -24,8 +17,25 @@ document.addEventListener("DOMContentLoaded", function() {
     let typingSpeed = 150;
     let deletingSpeed = 100;
     let delayBetweenWords = 1000;
-    let isDeleting = false;
-
+    let isDeleting = false;document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.getElementById("hamburger-icon");
+        const nav = document.getElementById("mobile-nav");
+        const links = nav.querySelectorAll("a");
+  
+        // Toggle nav on click
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("show");
+        });
+  
+        // Hide menu on link click
+        links.forEach(link => {
+        link.addEventListener("click", () => {
+            setTimeout(() => {
+            nav.classList.remove("show");
+            }, 150);
+        });
+        });
+    });
     const typingElement = document.querySelector(".wrapper");
 
     function typeEffect() {
