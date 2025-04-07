@@ -1,6 +1,18 @@
 
-d
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const mobileNav = document.getElementById('mobile-nav');
 
+    hamburgerIcon.addEventListener('click', () => {
+    mobileNav.classList.toggle('show');
+    });
+
+  // Optional: Close nav on link click
+    const navLinks = document.querySelectorAll('#mobile-nav a');
+    navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+    mobileNav.classList.remove('show');
+    });
+    })
 
 
 
@@ -21,12 +33,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const hamburger = document.getElementById("hamburger-icon");
         const nav = document.getElementById("mobile-nav");
         const links = nav.querySelectorAll("a");
-  
         // Toggle nav on click
         hamburger.addEventListener("click", () => {
             nav.classList.toggle("show");
         });
-  
         // Hide menu on link click
         links.forEach(link => {
         link.addEventListener("click", () => {

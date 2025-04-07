@@ -69,13 +69,13 @@
 
         .proj-container {
             display: flex;
-            flex-direction: column; /* Stack projects vertically */
-            gap: 15px; /* Space between projects */
-            align-items: center; /* Center align if needed */
+            flex-direction: column; 
+            gap: 15px; 
+            align-items: center; 
         }
     
         .article-container1 {
-            width: 100%; /* Make each project take full width */
+            width: 100%; 
             background: #f5f5f5;
             padding: 15px;
             border-radius: 10px;
@@ -276,7 +276,7 @@
         position: relative;
         margin: 3rem 4rem;
     }
-      
+    
     .proj-containers {
         display: flex;
         gap: 40px;
@@ -327,10 +327,10 @@
 }
 @media screen and (max-width: 792px) {
     body {
-        font-size: 1rem; /* Adjust base font size for readability */
+        font-size: 1rem;
         margin: 0;
         padding: 0;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
+        overflow-x: hidden;
     }
 
     #profile {
@@ -514,26 +514,7 @@
         overflow-x: hidden; /* Prevent horizontal scrolling */
     }
     
-    #experience {
-        position: relative;
-        margin: 1rem 1rem;
-    }
-    .experience-details-container {
-        display: flex;
-        justify-content: center;
-        margin-bottom:2rem;
-        margin-left:2rem;
-        margin-right:2rem;
-    }
     
-    .article-container {
-        display: flex;
-        text-align: initial;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 2.5rem;
-        justify-content: space-around;
-    }
     
     
     #profile {
@@ -550,20 +531,20 @@
     }
 
     #profile img {
-        max-width: 90%; /* Scale down images */
+        max-width: 90;
         height: auto;
-        margin: 1rem auto; /* Center-align the image */
+        margin: 1rem auto; 
     }
 
     .about-containers {
         flex-wrap: wrap;
-        margin: 0 0.5rem; /* Reduce side margins */
+        margin: 0 0.5rem; 
     }
     
 
     
         .article-container1 {
-            width: 100%; /* Make each project take full width */
+            width: 100%; 
             background: #f5f5f5;
             padding: 15px;
             border-radius: 10px;
@@ -571,10 +552,10 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
     
-     /*project used*/
+        /*project used*/
         .details-container {
             padding: 2rem 1rem;
-            flex: 1 1 100%; /* Allow it to grow and shrink, base 100% width */
+            flex: 1 1 100%; 
             background: rgb(242, 223, 223);
             border-radius: 1rem;
             border: 0.1rem solid rgb(163, 163, 163);
@@ -593,7 +574,7 @@
         
     section {
         margin: 0 3%;
-        padding: 1rem 0; /* Reduce padding */
+        padding: 1rem 0; 
         height: fit-content;
     }
 
@@ -608,15 +589,14 @@
     }
 
     .title {
-        font-size: 1.25rem; /* Reduce title size */
+        font-size: 1.25rem; 
         text-align: center;
     }
 
     .text-container {
         text-align: justify;
-        margin: 0 0.5rem; /* Reduce margins */
+        margin: 0 0.5rem; 
     }
-
     .btn-container {
         display: flex;
         flex-wrap: wrap;
@@ -633,9 +613,8 @@
     article, 
     .experience-sub-title, 
     .section__text__p2 {
-        font-size: 0.9rem; /* Adjust font size for readability */
+        font-size: 0.9rem; 
     }
-
     .section__pic-container {
         width: auto;
         border-radius: 1rem;
@@ -661,7 +640,7 @@
     
 
     .wrapper {
-        font-size: 28px; /* Slightly smaller text */
+        font-size: 28px; 
         font-weight: 600;
         min-width: 250px;
     }
@@ -747,7 +726,7 @@
     transition: transform 0.3s ease-in-out;
 }
         .home {
-          flex-direction: column; /* Stack image and text vertically */
+          flex-direction: column; 
         padding: 20px 10px;
         text-align: center;
         }
@@ -808,10 +787,10 @@
     
     .logo,
     .nav-links,.nav {
-        display: none; /* 👈 Hide logo and full nav */
+        display: none; 
     }
     
-       
+    
 
     .nav {
     display: none;
@@ -831,52 +810,12 @@
         display: flex;
     }
     
-    
-    
-    .experience-sub-title {
-        color: rgb(85, 85, 85);
-        font-weight: 600;
-        font-size: 1.75rem;
-        margin-bottom: 2rem;
-    }
-    
-    .experience-details-container {
-        display: flex;
-        justify-content: center;
-        margin-bottom:2rem;
-        margin-left:2rem;
-        margin-right:2rem;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 0 1rem;
-
-    }
-      
-    .article-container {
-        display: flex;
-        text-align: initial;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 2.5rem;
-        justify-content: space-around;
-    }
-      
-    article {
-        display: flex;
-        width: 10rem;
-        justify-content: space-around;
-        gap: 0.5rem;
-    }
-    
-    article .icon {
-        cursor: default;
-    }
     .proj-containers {
         display: flex;
         gap: 30px;
         padding:40px 30px 40px;
     }
-    /* Basic Reset (optional but useful) */
+    
 * {
     margin: 0;
     padding: 0;
@@ -889,10 +828,10 @@
     font-size: 28px;
     color: white;
     padding: 10px;
-    position: fixed; /* Changed from relative to fixed so it stays on top */
+    position: fixed; 
     top: 3px;
     right: 12px;
-    z-index: 9999; /* Highest priority */
+    z-index: 9999;
     border-radius: 4px;
     position:sticky;
 }
@@ -901,15 +840,15 @@
 #mobile-nav {
     display: none;
     background-color: rgb(242, 223, 223);
-    position: fixed; /* Changed from absolute to fixed */
-    top: 50px; /* Just below the hamburger */
+    position: fixed; 
+    top: 50px; 
     left: 0;
     width: 100%;
-    z-index: 9998; /* Just under the hamburger */
+    z-index: 9998; 
 
 }
 
-/* Show class toggled by JavaScript */
+
 #mobile-nav.show{
     display:block;
 }
@@ -937,4 +876,81 @@
 #hamburger-icon,#mobile-nav.show{
     display:block;
 }
-}
+    body {
+        overflow-x: hidden;
+    }
+
+    
+    
+        #experience {
+            position: relative;
+            margin: 1rem;
+        }
+    
+        .experience-details-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 2rem;
+            padding: 0 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        .article-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            justify-content: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        article {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            gap: 0.5rem;
+            box-sizing: border-box;
+        }
+    
+        article .icon {
+            cursor: default;
+        }
+    
+        .proj-containers {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            margin: 0 auto;
+            gap: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    
+        .details-container1 {
+            padding: 1rem;
+            background: rgb(242, 223, 223);
+            border-radius: 1rem;
+            border: 0.1rem solid rgb(163, 163, 163);
+            text-align: center;
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+    
+        .experience-sub-title {
+            color: rgb(85, 85, 85);
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+    }
