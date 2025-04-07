@@ -8,6 +8,13 @@ body {
   padding: 0;
   background: linear-gradient(to right top, #108ff0, #8f8ccb, #c281b8, #e17c93, #e3866a);
 }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+
+}
 
 * {
   margin: 0;
