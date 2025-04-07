@@ -1454,7 +1454,7 @@
             overflow-x: hidden;
             width: 100%;
         }
-        .about-pic{
+        .about-pic,.section__pic-container{
             display:none;
         }
         #profile {
@@ -1528,6 +1528,7 @@
         .title {
             font-size: 1.25rem;
             text-align: center;
+            margin-bottom:1rem;
         }
     
         .text-container {
