@@ -1651,8 +1651,9 @@
         #about {
             position: relative;
             background-color: rgb(242, 223, 223);
-            min-height: 80vh;
+            min-height: 100vh;
             padding: 40px 0px 240px;
+            overflow:hidden;
         }
     
         .icon {
