@@ -15,7 +15,6 @@
     })
 
 
-
 img.addEventListener("touchstart", () => {
     img.style.animation = "none"; // Reset animation
     setTimeout(() => {
