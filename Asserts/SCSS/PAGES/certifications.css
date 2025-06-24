@@ -29,6 +29,7 @@
   padding: 10px;
   transition: transform 0.3s ease;
   text-align: center;
+  background-color: white;
 }
 
 /* Remove right margin from every 2nd item */
